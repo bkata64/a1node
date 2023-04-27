@@ -11,7 +11,7 @@ app.use(cors());
 // Read
 app.get('/dogs', (req, res) => {
     fs.readFile('./data/kutyak.json', (err, file) => {
-        res.send(file);
+        res.send(JSON.parse(file));
     });   
 });
 
