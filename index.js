@@ -54,7 +54,7 @@ app.post("/dogs", bodyParser.json(), (req, res) => {
   });
 
 
-  app.listen(9000);
+  app.listen(process.env.PORT);
 
 function sanitizeString(str) {
     str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim, "");
