@@ -6,9 +6,7 @@ app.use(express.static("public"));
 
 const cors = require('cors');
 
-app.use(cors({
-  origin : 'http://localhost:3000'   
-}));
+app.use(cors());
 
 // Read
 app.get('/dogs', (req, res) => {
